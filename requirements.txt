@@ -1,0 +1,57 @@
+# ============================================================
+# Financial RAG Chatbot - Dependencies
+# ============================================================
+
+# --- Core ML & NLP ---
+torch>=2.1.0
+transformers>=4.36.0
+sentence-transformers>=2.2.2
+
+# --- LangChain Ecosystem ---
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-huggingface>=0.0.1
+langchain-text-splitters>=0.0.1
+
+# --- Vector Store & Retrieval ---
+faiss-cpu>=1.7.4
+rank-bm25>=0.2.2
+chromadb>=0.4.0
+
+# --- SEC EDGAR Data Scraping ---
+sec-edgar-downloader>=5.0.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+html2text>=2020.1.16
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# --- Data Processing ---
+pandas>=2.1.0
+numpy>=1.24.0
+tiktoken>=0.5.0
+tqdm>=4.66.0
+jsonlines>=4.0.0
+
+# --- Application UI ---
+streamlit>=1.30.0
+plotly>=5.18.0
+
+# --- Evaluation ---
+ragas>=0.1.0
+rouge-score>=0.1.2
+nltk>=3.8.0
+
+# --- Configuration & Utilities ---
+pyyaml>=6.0.0
+python-dotenv>=1.0.0
+loguru>=0.7.0
+pydantic>=2.5.0
+
+# --- Testing ---
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0
+
+# --- AWS Deployment ---
+boto3>=1.34.0

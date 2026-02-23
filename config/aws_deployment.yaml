@@ -1,0 +1,48 @@
+# AWS Deployment Configuration
+# ============================================================
+
+deployment:
+  service_name: "financial-rag-chatbot"
+  region: "us-east-1"
+  
+  # EC2 Instance Configuration
+  ec2:
+    instance_type: "t3.xlarge"    # 4 vCPU, 16GB RAM
+    ami: "ami-0c7217cdde317cfec"  # Ubuntu 22.04 LTS
+    key_pair: "your-key-pair"
+    security_group:
+      ingress:
+        - port: 8501
+          protocol: tcp
+          cidr: "0.0.0.0/0"
+        - port: 22
+          protocol: tcp
+          cidr: "YOUR_IP/32"
+  
+  # ECS Fargate Configuration (alternative)
+  ecs:
+    cluster_name: "financial-rag-cluster"
+    task_cpu: 2048        # 2 vCPU
+    task_memory: 8192     # 8GB
+    desired_count: 1
+    container_port: 8501
+    health_check_path: "/_stcore/health"
+    auto_scaling:
+      min_capacity: 1
+      max_capacity: 3
+      target_cpu_utilization: 70
+
+  # ECR Repository
+  ecr:
+    repository_name: "financial-rag-chatbot"
+    image_tag: "latest"
+    scan_on_push: true
+
+  # S3 for data storage
+  s3:
+    bucket_name: "financial-rag-data"
+    versioning: true
+    lifecycle_rules:
+      - prefix: "data/raw/"
+        transition_days: 90
+        storage_class: "GLACIER"

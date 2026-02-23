@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+venv/
+env/
+.venv/
+
+# Data (too large for git)
+data/raw/*.json
+data/processed/*.jsonl
+data/processed/*.pkl
+data/vectors/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/vectors/.gitkeep
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML Models (cached)
+models/
+*.bin
+*.pt
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/

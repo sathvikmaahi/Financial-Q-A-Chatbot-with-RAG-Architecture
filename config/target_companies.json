@@ -1,0 +1,27 @@
+{
+  "companies": [
+    {"ticker": "AAPL", "name": "Apple Inc.", "cik": "0000320193", "sector": "Technology"},
+    {"ticker": "MSFT", "name": "Microsoft Corporation", "cik": "0000789019", "sector": "Technology"},
+    {"ticker": "GOOGL", "name": "Alphabet Inc.", "cik": "0001652044", "sector": "Technology"},
+    {"ticker": "AMZN", "name": "Amazon.com Inc.", "cik": "0001018724", "sector": "Technology"},
+    {"ticker": "META", "name": "Meta Platforms Inc.", "cik": "0001326801", "sector": "Technology"},
+    {"ticker": "NVDA", "name": "NVIDIA Corporation", "cik": "0001045810", "sector": "Technology"},
+    {"ticker": "JPM", "name": "JPMorgan Chase & Co.", "cik": "0000019617", "sector": "Finance"},
+    {"ticker": "GS", "name": "Goldman Sachs Group Inc.", "cik": "0000886982", "sector": "Finance"},
+    {"ticker": "BRK-B", "name": "Berkshire Hathaway Inc.", "cik": "0001067983", "sector": "Finance"},
+    {"ticker": "V", "name": "Visa Inc.", "cik": "0001403161", "sector": "Finance"},
+    {"ticker": "UNH", "name": "UnitedHealth Group Inc.", "cik": "0000731766", "sector": "Healthcare"},
+    {"ticker": "JNJ", "name": "Johnson & Johnson", "cik": "0000200406", "sector": "Healthcare"},
+    {"ticker": "PFE", "name": "Pfizer Inc.", "cik": "0000078003", "sector": "Healthcare"},
+    {"ticker": "WMT", "name": "Walmart Inc.", "cik": "0000104169", "sector": "Consumer"},
+    {"ticker": "KO", "name": "Coca-Cola Company", "cik": "0000021344", "sector": "Consumer"},
+    {"ticker": "PG", "name": "Procter & Gamble Co.", "cik": "0000080424", "sector": "Consumer"},
+    {"ticker": "XOM", "name": "Exxon Mobil Corporation", "cik": "0000034088", "sector": "Energy"},
+    {"ticker": "CVX", "name": "Chevron Corporation", "cik": "0000093410", "sector": "Energy"},
+    {"ticker": "BA", "name": "Boeing Company", "cik": "0000012927", "sector": "Industrial"},
+    {"ticker": "CAT", "name": "Caterpillar Inc.", "cik": "0000018230", "sector": "Industrial"}
+  ],
+  "filing_types": ["10-K"],
+  "year_range": {"start": 2020, "end": 2024},
+  "max_filings_per_company": 5
+}
