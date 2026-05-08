@@ -1,6 +1,9 @@
 # Financial Q&A Chatbot with RAG
 
-A chatbot that answers questions about SEC 10-K filings using Retrieval-Augmented Generation (RAG). Built with Python, LangChain, FAISS, and Streamlit.
+A chatbot that answers questions about SEC 10-K filings using Retrieval-Augmented Generation (RAG). It is built with Python, LangChain, FAISS, and Streamlit.
+
+This project is demo for the usage of RAG architectture for the financial domain. 
+
 
 ## What it does
 
@@ -14,8 +17,7 @@ The system retrieves relevant document sections and uses OpenAI's GPT-3.5 to gen
 ## Architecture
 
 ```
-User Query → Query Processing → Hybrid Retrieval (BM25 + FAISS) → 
-Reranking → Context Assembly → LLM Answer → Response with Sources
+User Query → Query Processing → Hybrid Retrieval (BM25 + FAISS) → Reranking → Context Assembly → LLM Answer → Response with Sources
 ```
 
 **Key components:**
@@ -27,7 +29,7 @@ Reranking → Context Assembly → LLM Answer → Response with Sources
 - **RAG Chain**: LangChain pipeline for query processing and answer generation
 - **Streamlit UI**: Simple web interface for asking questions
 
-## Setup
+## Setup of this project into your local system:
 
 ### 1. Clone and install
 
@@ -41,7 +43,7 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2. Set up OpenAI API key (optional but recommended)
+### 2. Set up OpenAI API key (optional but recommended) - For upto date information
 
 ```bash
 # Copy the example file
